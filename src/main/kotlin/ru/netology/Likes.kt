@@ -1,11 +1,11 @@
 package ru.netology
 
 fun main(){
-    val likes: Int = 123
-    if ((likes % 10 == 1 || likes == 1) && (likes != 11 && likes % 100 != 11)) {
+    val likes: Int = 32
+    if ((likes % 10 == 1 || likes == 1) && (likes != 11 || likes % 100 != 11)) {
         println("Вы получили: $likes" + " лайк")
     }
-    else if (likes == 11 && likes % 100 == 11)  {
+    else if (likes == 11 || likes % 100 == 11)  {
         println("Вы получили: $likes" + " лайков")
     }
     else if (likes >= 2 && likes <= 4){
